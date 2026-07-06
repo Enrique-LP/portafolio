@@ -12,15 +12,28 @@
     >
 
     <style>
+        body {
+            background-color: #f8f9fa;
+        }
         .hero {
-            background: linear-gradient(135deg, #6f42c1, #563d7c);
+            background: linear-gradient(135deg, #0d6efd, #6f42c1);
             color: white;
-            padding: 80px 20px;
+            padding: 100px 20px;
             text-align: center;
+        }
+        .card {
+            border: none;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .card:hover {
             transform: translateY(-5px);
-            transition: 0.3s;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .footer {
+            padding: 2rem 0;
         }
     </style>
 </head>
@@ -28,7 +41,7 @@
 <body>
 
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Enrique LP</a>
         </div>
@@ -36,7 +49,7 @@
 
     <!-- HERO -->
     <section class="hero">
-        <h1 class="display-4 fw-bold">Hola mundo 👋</h1>
+        <h1 class="display-3 fw-bold">Hola mundo 👋</h1>
         <p class="fs-4">Bienvenido a mi portafolio.</p>
     </section>
 
@@ -49,13 +62,13 @@
 
             <!-- TARJETA 1 -->
             <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
                         <h5 class="card-title">Primera Tarea</h5>
                         <p class="card-text">Mi primer notebook publicado en GitHub Pages.</p>
                         <a 
                             href="https://enrique-lp.github.io/portafolio/Mi_primer_notebook.html" 
-                            class="btn btn-primary"
+                            class="btn btn-primary mt-auto"
                         >
                             Ver tarea
                         </a>
@@ -63,12 +76,23 @@
                 </div>
             </div>
 
-            <!-- Puedes agregar más tarjetas aquí -->
+            <!-- TARJETA 2 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Segunda Tarea</h5>
+                        <p class="card-text">Esta es la descripción de mi segunda tarea.</p>
+                        <a href="#" class="btn btn-secondary mt-auto">
+                            Ver tarea
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="footer bg-dark text-white text-center">
         © 2026 Enrique LP — Portafolio
     </footer>
 
