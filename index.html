@@ -5,58 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portafolio de Enrique</title>
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap -->
     <link 
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
         rel="stylesheet"
     >
 
     <style>
-        body {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-        }
         .hero {
+            background: linear-gradient(135deg, #6f42c1, #563d7c);
+            color: white;
             padding: 80px 20px;
             text-align: center;
         }
-        .hero h1 {
-            font-weight: 700;
-            color: #343a40;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: #6c757d;
-        }
-        .btn-coqueton {
-            background-color: #6f42c1;
-            color: white;
-            border-radius: 30px;
-            padding: 10px 25px;
+        .card:hover {
+            transform: translateY(-5px);
             transition: 0.3s;
-        }
-        .btn-coqueton:hover {
-            background-color: #563d7c;
-            color: #fff;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="hero">
-        <h1>Hola mundo 👋</h1>
-        <p>Este es mi portafolio.</p>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Enrique LP</a>
+        </div>
+    </nav>
 
-        <a 
-            href="https://enrique-lp.github.io/portafolio/Mi_primer_notebook.html" 
-            class="btn btn-coqueton mt-3"
-            target="_blank"
-        >
-            Primera Tarea
-        </a>
+    <!-- HERO -->
+    <section class="hero">
+        <h1 class="display-4 fw-bold">Hola mundo 👋</h1>
+        <p class="fs-4">Bienvenido a mi portafolio — sencillo pero coquetón.</p>
+    </section>
+
+    <!-- CONTENIDO -->
+    <div class="container my-5">
+
+        <h2 class="mb-4 text-center">Mis tareas</h2>
+
+        <div class="row g-4">
+
+            <!-- TARJETA 1 -->
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Primera Tarea</h5>
+                        <p class="card-text">Mi primer notebook publicado en GitHub Pages.</p>
+                        <a 
+                            href="https://enrique-lp.github.io/portafolio/Mi_primer_notebook.html" 
+                            class="btn btn-primary"
+                        >
+                            Ver tarea
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Puedes agregar más tarjetas aquí -->
+        </div>
     </div>
 
-    <!-- Bootstrap JS -->
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        © 2026 Enrique LP — Portafolio
+    </footer>
+
     <script 
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
     </script>
