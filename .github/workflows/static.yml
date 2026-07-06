@@ -25,8 +25,7 @@ jobs:
       - name: Build site
         run: |
           mkdir -p _site
-          cp -r . _site
-          rm -rf _site/.git _site/.github
+          rsync -a --delete --exclude '_site' --exclude '.git' --exclude '.github' ./ _site/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
