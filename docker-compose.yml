@@ -1,11 +1,11 @@
 version: "3.9"
 
 services:
-  streamlit:
-    build: .                   # <- construye la imagen usando el Dockerfile en este directorio
-    container_name: taxi_dashboard
+  netflix-portfolio:
+    build: . # <- construye la imagen usando el Dockerfile en este directorio
+    container_name: netflix_dashboard
     ports:
       - "8502:8501"
     env_file:
-      - .env                   # carga tus secrets desde .env
+      - .env # carga tus secrets desde .env
     restart: unless-stopped
